@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Employee {
     private final String firstName;
     private final String lastName;
+    public String getFullName;
 
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
@@ -18,6 +19,8 @@ public class Employee {
     public String getLastName() {
         return lastName;
     }
+
+
 
     @Override
     public boolean equals(Object o) {

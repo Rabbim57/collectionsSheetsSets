@@ -3,6 +3,7 @@ package ru.skypro.collections.service;
 import ru.skypro.collections.model.Employee;
 
 import java.util.List;
+import java.util.Map;
 
 public interface EmployeeService {
     Employee add(String firstName, String lastName);
@@ -11,5 +12,5 @@ public interface EmployeeService {
 
     Employee find(String firstName, String lastName) throws EnumConstantNotPresentException;
 
-    List<Employee> getAll();
+    Map<String, Employee> getAll();
 }
